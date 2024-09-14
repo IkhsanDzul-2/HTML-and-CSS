@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style-25.css">
+    <style>
+        #ctrlmusik{
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 10vh;
+            right: 10vw;
+        }
+
+        #img-musik{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>Section 25</title>
+</head>
+<body>
+    <div id="kotakmusik">
+        <audio id="musik" loop autoplay>
+            <source src="assets/audio/golden-hour-beautiful-piano-music-203835.mp3">
+            Browser Anda tidak mendukung
+        </audio>
+        <div id="ctrlmusik" onclick="putarMusik()">
+            <img id="img-musik" src="assets/img/video-pause-button.png" alt="">
+        </div>
+    </div>
+
+    <div id="section-1" class="box-full bg-primary c-txt-primary">Quotes
+       <br><br><br><br> <button onclick="putarMusik()">Buka Undangan</button>
+    </div>
+    <div id="section-2" class="box-full bg-secondary c-txt-secondary">Profile</div>
+    <div id="section-3" class="box-full bg-third c-txt-primary">Acara</div>
+    <div id="section-4" class="box-full bg-fourth c-txt-secondary">Galeri</div>
+    
+    <div id="nav">
+        <ul>
+            <a href="#section-1"><li>Quotes</li></a>
+            <a href="#section-2"><li>Profile</li></a>
+            <a href="#section-3"><li>Acara</li></a>
+            <a href="#section-4"><li>Galeri</li></a>
+        </ul>
+    </div>
+
+    <script>
+        function putarMusik(){
+            const musik = document.querySelector('#musik');
+            const imgmusik = document.querySelector('#img-musik');
+            if (musik.paused){
+                musik.play();
+                imgmusik.src = "assets/img/music.png";
+            } else {
+                musik.pause();
+                imgmusik.src = "assets/img/video-pause-button.png";
+            }
+        }
+    </script>
+</body>
+</html>

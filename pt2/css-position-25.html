@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position-25</title>
+    <style>
+        .container{
+            display: block;
+            width: 90%;
+            padding: 15px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        #kotak-static{
+            position: static;
+        }
+
+        .kotak{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 2px dotted black;
+        }
+        /*Color box*/
+        .bg-kuning{
+            background-color: yellow;
+        }
+        .bg-hijau{
+            background-color: greenyellow;
+        }
+        .bg-pink{
+            background-color: pink ;
+        }
+        
+         /*Static kotak*/
+        #k-1{
+            position: static;
+        }
+        #k-2{
+            position: static;
+        }
+        #k-3{
+            position: static;
+        }
+        
+        /*Relative kotak*/
+        #k-4{
+            position: relative;
+            display: block;
+        }
+        #k-5{
+            position: relative;
+            left: 100px;
+            bottom: 50px;
+            z-index: 3;
+        }
+        #k-6{
+            position: relative;
+        }
+
+         /*Absolute kotak*/
+         #k-7{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+         }
+         #k-8{
+            position: absolute;
+         }
+         #k-9{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+         }
+         #kotak-absolute{
+            position: relative;
+            height: 150px;
+         }
+         #kotak-fixed{
+            background-color: red;
+            display: block;
+            height: 20px;
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            z-index: 4;
+         }
+         #kotak-sticky{
+            position: sticky;
+            top: 150px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Property Position</h1>
+    <hr>
+    <h2>Position Static</h2>
+
+    <div id="kotak-static" class="container">
+        <div id="k-1" class="kotak bg-kuning">Kotak 1 static</div>
+        <div id="k-2" class="kotak bg-hijau">Kotak 2 static</div>
+        <div id="k-3" class="kotak bg-pink">Kotak 3 static</div>
+    </div>
+
+    <!--Position Relative-->
+    <br>
+    <hr>
+    <h2>Position Relative</h2>
+
+    <div id="kotak-relative" class="container">
+        <div id="k-4" class="kotak bg-pink">Kotak 4 Relative</div>
+        <div id="k-5" class="kotak bg-hijau">Kotak 5 Relative</div>
+        <div id="k-6" class="kotak bg-kuning">Kotak 6 Relative</div>
+    </div>
+
+    <!--Position Absolute-->
+    <br>
+    <hr>
+    <h2>Position Absolute</h2>
+
+    <div id="kotak-absolute" class="container">
+        <div id="k-7" class="kotak bg-hijau">Kotak 7 Relative</div>
+        <div id="k-8" class="kotak bg-pink">Kotak 8 Relative</div>
+        <div id="k-9" class="kotak bg-kuning">Kotak 9 Relative</div>
+    </div>
+    <hr>
+    
+    <!--Position Fixed-->
+    <br>
+    <hr>
+    <h2>Position Fixed</h2>
+    <div id="kotak-fixed" class="container">Kotak Fixed</div>
+    
+    <!--Position Sticky-->
+    <br>
+    <hr>
+    <h2>Position Sticky--</h2>
+    <div id="kotak-sticky" class="kotak">Kotak Fixed</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html

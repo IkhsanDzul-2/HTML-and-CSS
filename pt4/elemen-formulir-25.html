@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulir - 25</title>
+    <style>
+        form{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="">
+        <h2>Pendaftaran Club Badminton</h2>
+        <div>
+            <label for="txtnama">Nama :</label>
+        <input type="text" name="txtnama" id="txtnama">
+        </div>
+        <div>
+            <label for="numabsen">Absen :</label>
+            <input type="number" name="numabsen" id="numabsen">
+        </div>
+        <div>
+            <label for="">Jenis Kelamin</label>
+            <input type="radio" value="pria" name="jenkel" id="jenkelpria">
+            <label for="jenkelpria">Pria</label>
+            <input type="radio" value="wanita" name="jenkel" id="jenkelwanita">
+            <label for="jenkelwanita">wanita</label>
+        </div>
+        <!-- CheckBox rorr -->
+        <div>  
+            <label for="">Skill :</label>
+            <div>
+                <input type="checkbox" value="js" name="Skill[]" id="jsSkill">
+                <label for="jsSkill">Java Script</label>
+            </div>
+            <div>
+                <input type="checkbox" value="css-html" name="Skill[]" id="cssHtml">
+                <label for="cssHtml">Css & HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" value="php" name="Skill[]" id="phpSkill">
+                <label for="phpSkill">Php</label>
+            </div>
+            <div>
+                <input type="checkbox" value="laravel" name="Skill[]" id="laravelSkill">
+                <label for="laravelSkill">laravel</label>
+            </div>
+            <div>
+                <input type="checkbox" value="springboot" name="Skill[]" id="sbSkill">
+                <label for="sbSkill">Springboot</label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
